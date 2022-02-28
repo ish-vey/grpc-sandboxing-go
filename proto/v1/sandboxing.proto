@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// path where auto-generated files will go.
+option go_package = "sandboxing/v1";
+
+// The service at hand
+service Sandbox {
+    // One of its streamers
+    rpc GetFunds(GetFundsRequest) returns(GetFundsResponse) {}
+}
+
+// The get funds request message
+message GetFundsRequest {
+    int32 id = 1;
+    float amount = 2;
+}
+
+// The get funds response message
+message GetFundsResponse {
+    bool success = 1;
+}

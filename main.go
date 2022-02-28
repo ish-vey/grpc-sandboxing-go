@@ -1,5 +1,6 @@
 package main
 
+// for imported items that are not installed, run 'go mod tidy'
 import (
 	"fmt"
 
